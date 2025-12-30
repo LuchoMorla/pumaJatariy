@@ -14,10 +14,9 @@
 }
 html {
     font-size: 62.5%;
-    background-image: url("./archivos/estructura compuestas por cuadrados, triangulos que al final forman una circunsferencia.jpg");
     color: var(--color-celeste);
     min-height: 100%;
-    background-image: url("https://i.pinimg.com/originals/a1/5f/8a/a15f8aaa167e4c6b106ed44e94d04fd6.jpg");
+    background-image: url("https://images.pexels.com/photos/34582699/pexels-photo-34582699.jpeg?_gl=1*81vcxe*_ga*MjY0MjMwMTAwLjE3NjcwNzc4MzM.*_ga_8JE65Q40S6*czE3NjcwNzc4MzIkbzEkZzEkdDE3NjcwNzc4NzckajE1JGwwJGgw");
     background-size: 100% 100%;
 }
 body {
@@ -173,7 +172,7 @@ strong {
     display: inline-flex;
 }
 header {
-    background-color: var(--color-celeste);
+    background-color: yellow;
     height: 65px;
     width: 100%;
     display: flex;
@@ -196,4 +195,16 @@ header {
     text-decoration: none;
     font-size: 1.6rem;
     margin: 10px;
+}
+.listaVinetaCircular {
+    list-style-type: /* circle */disc; 
+    padding-left: 20px;   /* deja espacio para las viñetas */
+    margin: 0;
+    display: inline-block;
+}
+.listaVinetaCircular li {
+  display: list-item;   /* asegura disposición vertical */
+}
+footer {
+    background-color: red;
 }
