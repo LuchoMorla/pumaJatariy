@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: tunumerologia.netlify.app
+Token: aa39cfd1ef5eff299cfc416efaba27a9cc8eafad87d686ef9b64d83e1eb4df8b

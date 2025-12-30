@@ -1,0 +1,199 @@
+:root {
+    /* Colors palet */
+    --color-celeste: #00a8ff;
+    --color-verde: #A4EBA8;
+    --color-rosado: #EBBCE0;
+    --color-rojo: #F5222E;
+    --color-negro: #24292f;
+/*     --color-verdeQMGusta: #b6fac7; */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-image: url("./archivos/estructura compuestas por cuadrados, triangulos que al final forman una circunsferencia.jpg");
+    color: var(--color-celeste);
+    min-height: 100%;
+    background-image: url("https://i.pinimg.com/originals/a1/5f/8a/a15f8aaa167e4c6b106ed44e94d04fd6.jpg");
+    background-size: 100% 100%;
+}
+body {
+    font-size: 1.6rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+h2 {
+    font-size: 2.6rem;
+    margin: 1rem;
+}
+p {
+    font-size: 1.6rem;
+    margin: 1rem;
+    color: whitesmoke;
+}
+input {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+.inputs-numberDay {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    
+}
+/*Ocultar flechitas en crhome*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/*Ocultar flechitas en mozilla*/
+input[type=number] {
+    -moz-appearance: textfield;
+}
+label {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+input[type="button"], #button_abrir-popUp, button {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(28, 170, 206));
+    color: -internal-light-dark(var(--color-rojo), white);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-rojo);
+    margin: 2rem;
+}
+input[type="button"]:hover {
+    background-color: -internal-light-dark(var(--color-celeste), white);
+    color: -internal-light-dark(white, var(--color-celeste));
+    opacity: 0.85;
+}
+/*Vamos a crear un popup de formulario de contacto para el que quiera comprar bonos de carbono*/
+.overlay {
+    background: linear-gradient(70deg, rgba(255, 0, 128, 0.2) 0%, var(--color-rosado) 50% , rgba(255, 0, 0, 0.6) 100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*hidden -> ocultar despues al activar
+    con js visibility: visible agregando la clase active*/
+    visibility: hidden;
+}
+.overlay.active {
+    visibility: visible;
+}
+.popUp {
+    background: #90a1e2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    /*overflow para que en caso de ser necesario poder hacer scroll*/
+    overflow-y: auto;
+    /*porsi queremos hacer animaciones ;)*/
+    color: var(--color-negro);
+}
+.popUp .button_cerrar-popUp {
+    font-size: 1.6rem;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: var(--color-rojo);
+    transition: .3s ease all;
+    text-decoration: none;
+    border: white solid 1px;
+    width: 5rem;
+    border-radius: 50%;
+}
+.popUp .button_cerrar-popUp:hover, .popUp .button_cerrar-popUp:focus, .popUp .button_cerrar-popUp.active {
+    color: white;
+    opacity: 0.9;
+    text-align: left;
+}
+strong {
+    font-size: 1.6rem;
+    margin: 1rem;
+    color: var(--color-celeste);
+}
+.containter-linkText {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-negro);
+    margin: 0;
+}
+.container-TextLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    border: solid 1px var(--color-celeste);
+    border-radius: 10px;
+    margin-bottom: 6%;
+}
+.containter-linkText p {
+    font-size: 1.6rem;
+    margin: 1rem;
+    color: var(--color-verde);
+    margin: 4%;
+}
+.containter-Personalidad__links {
+    justify-content: left;
+    /*Utilizar flexandGrid para posisionar uno al lado del otro*/
+/*     display: flex;
+    flex-wrap: flex;
+    overflow:scroll; */
+}
+.nav {
+    background-color: var(--color-celeste);
+    max-height: 65px;
+}
+.nav img, ul {
+    display: inline-flex;
+}
+header {
+    background-color: var(--color-celeste);
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.main-nav__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+.main-nav_ancla {
+    color: var(--color-negro);
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 10px;
+}
