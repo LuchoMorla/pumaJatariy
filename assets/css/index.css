@@ -1,6 +1,6 @@
 :root {
     /* Colors palet */
-    --color-celeste: #00a8ff;
+    --color-celeste: #2800F0;
     --color-verde: #A4EBA8;
     --color-rosado: #EBBCE0;
     --color-rojo: #F5222E;
@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 8rem;
     margin: 1rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
@@ -36,7 +36,7 @@ h2 {
 p {
     font-size: 1.6rem;
     margin: 1rem;
-    color: whitesmoke;
+    color: black;
 }
 input {
     font-size: 1.6rem;
@@ -179,6 +179,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+main {
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 25px;
+}
 .main-nav {
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +201,9 @@ header {
     font-size: 1.6rem;
     margin: 10px;
 }
+li {
+    color: black;
+}
 .listaVinetaCircular {
     list-style-type: /* circle */disc; 
     padding-left: 20px;   /* deja espacio para las viñetas */
@@ -205,6 +213,20 @@ header {
 .listaVinetaCircular li {
   display: list-item;   /* asegura disposición vertical */
 }
+.conclu{
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 25px;
+}
 footer {
-    background-color: red;
+  min-height: 120px;
+  background: linear-gradient(
+    to bottom,
+    #fcd116 0%,
+    #fcd116 50%,
+    #003893 50%,
+    #003893 75%,
+    #ce1126 75%,
+    #ce1126 100%
+  );
 }
